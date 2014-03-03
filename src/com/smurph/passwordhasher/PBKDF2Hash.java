@@ -28,21 +28,6 @@ import javax.crypto.spec.PBEKeySpec;
 
 import com.smurph.passwordhasher.exceptions.Base64DecodingException;
 
-/**
- * Pick an iteration count that works for you. The NIST recommends at least
- * 1,000 iterations:<br>
- * <br>
- * http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf<br>
- * <br>
- * iOS 4.x reportedly uses 10,000:<br>
- * <br>
- * http://blog.crackpassword.com/2010/09/smartphone-forensics-cracking-
- * blackberry-backup-passwords/<br>
- * <br>
- * PBKDF2 with SHA-1 as the hashing algorithm. Note that the NIST<br>
- * specifically names SHA-1 as an acceptable hashing algorithm for PBKDF2
- * http://java.dzone.com/articles/secure-password-storage-lots
- */
 public class PBKDF2Hash {
 
 	/**
